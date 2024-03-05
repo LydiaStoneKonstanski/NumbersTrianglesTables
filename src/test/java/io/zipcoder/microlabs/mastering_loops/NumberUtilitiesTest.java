@@ -8,7 +8,7 @@ public class NumberUtilitiesTest {
     public void testGetRange1A() {
         // : Given
         String expected = "0123456789";
-        int stop = 11;
+        int stop = 10;//Lydia changed this from 11 to 10
 
         // : When
         String actual = NumberUtilities.getRange(stop);
@@ -173,7 +173,7 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetEvenNumbers() {
         // : Given
-        String expected = "5791113151719";
+        String expected = "681012141618"; //Lydia changed this test to expect even
         int start = 5;
         int stop = 20;
 
@@ -187,7 +187,7 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetOddNumbers() {
         // : Given
-        String expected = "681012141618";
+        String expected = "5791113151719";//Lydia changed this test to expect odd
         int start = 5;
         int stop = 20;
         int step = 5;
