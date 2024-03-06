@@ -42,23 +42,4 @@ public class TableUtilities {
         }
         return xAxis;
     }
-
-    public static String kindaStarLike() {
-        String result = "";
-        int n = 5;
-
-        for (int i = 1; i <= n; i++) {
-            result += kindaStarRowLike(i) + "\n";
-        }
-
-        return result;
-    }
-    public static String kindaStarRowLike(int n) {
-        String xAxis = "";
-        String pipe = " |";
-        for (int i = 1; i <= n; i++) {
-            xAxis += String.format("%3d", n * i ) + pipe;
-        }
-        return xAxis;
-    }
 }
