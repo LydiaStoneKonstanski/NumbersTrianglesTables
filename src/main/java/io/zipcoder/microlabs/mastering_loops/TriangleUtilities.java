@@ -13,19 +13,11 @@ public static string doAThing(){
 public class TriangleUtilities {
 
     public static String getTriangle(int numberOfRows) {
-                int a, b;
-                // outer loop to handle number of rows
-                for (a = 0; a < numberOfRows; a++) {
-
-                    // inner loop to handle number of columns
-                    // values changing acc. to outer loop
-                    for (b = 0; b <= a; b++) {
-                                 ("*");
-                    }
-                    return getTriangle;
-
-                }
-            }
+        String star = "*";
+        while ((int i = 0) i <= numberOfRows(i++)){
+        }
+        return (star * i + \n);
+    }
 
             // Driver Function
             public static void main(String args[])
