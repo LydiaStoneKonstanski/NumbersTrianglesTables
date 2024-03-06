@@ -1,27 +1,63 @@
 package io.zipcoder.microlabs.mastering_loops;
 
 public class TableUtilities {
-    public static String getSmallMultiplicationTable(same number as int n below) {
-        String result;
-        "\n"
+    public static String getSmallMultiplicationTable() {
+        String result = "";
+        int n = 5;
+
+        for (int i = 1; i <= n; i++) {
+            result += lineOfNumbers(i, n) + "\n";
+        }
 
         return result;
     }
-    //for (int i = 1; i <= 6; i++) {
-    //}
+
 
     public static String getLargeMultiplicationTable() {
-        return null;
+        String result = "";
+        int n = 10;
+
+        for (int i = 1; i <= n; i++) {
+            result += lineOfNumbers(i, n) + "\n";
+        }
+
+        return result;
     }
 
     public static String getMultiplicationTable(int tableSize) {
-        return null;
-    }
-    public static String lineOfNumbers(int n) {
-        String xAxis = "";
-        String pipe = "|";
+        String result = "";
+        int n = 20;
+
         for (int i = 1; i <= n; i++) {
-            xAxis = String.format("%4d", n * i ) + pipe;
+            result += lineOfNumbers(i, n) + "\n";
+        }
+
+        return result;
+    }
+    public static String lineOfNumbers(int n, int columns) {
+        String xAxis = "";
+        String pipe = " |";
+        for (int i = 1; i <= columns; i++) {
+            xAxis += String.format("%3d", n * i ) + pipe;
+        }
+        return xAxis;
+    }
+
+    public static String kindaStarLike() {
+        String result = "";
+        int n = 5;
+
+        for (int i = 1; i <= n; i++) {
+            result += kindaStarRowLike(i) + "\n";
+        }
+
+        return result;
+    }
+    public static String kindaStarRowLike(int n) {
+        String xAxis = "";
+        String pipe = " |";
+        for (int i = 1; i <= n; i++) {
+            xAxis += String.format("%3d", n * i ) + pipe;
         }
         return xAxis;
     }
