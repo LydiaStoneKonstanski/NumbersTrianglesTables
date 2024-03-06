@@ -2,6 +2,14 @@ package io.zipcoder.microlabs.mastering_loops;
 import java.io.*;
 import java.util.Scanner;
 
+public static string doAThing(){
+    string thingToReturn;
+
+
+
+    return thingToReturn;
+}
+
 public class TriangleUtilities {
 
     public static String getTriangle(int numberOfRows) {
@@ -12,8 +20,7 @@ public class TriangleUtilities {
                     // inner loop to handle number of columns
                     // values changing acc. to outer loop
                     for (b = 0; b <= a; b++) {
-                        // printing stars
-                        System.out.print("*");
+                                 ("*");
                     }
                     return getTriangle;
 
